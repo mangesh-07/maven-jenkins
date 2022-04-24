@@ -154,6 +154,17 @@
 					<wtpversion>2.0</wtpversion>
 					<wtpContextName>maven-web-application</wtpContextName>
 				</configuration>
+				
+			<plugin>
+    <artifactId>maven-war-plugin</artifactId>
+    <version>3.3</version>
+    <configuration>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+    </configuration>
+</plugin>	
+				
+				
+				
 			</plugin>
 			
 </plugins>
