@@ -2,4 +2,6 @@
 <server>
    <sonar.login>6dfd4fd4fdf4d54dfd4fd4f</sonar.login>
  </server>
+ <nexus.prop>
  </servers>
+ 
