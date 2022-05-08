@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://13.126.26.143:9080/</sonar.host.url>
+		<sonar.host.url>http://65.0.138.143:9080/</sonar.host.url>
                 <sonar.login>c5ae8437fae4a33b962320f5cf4586fa7ffab092</sonar.login>
 		
              
@@ -107,13 +107,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://3.110.222.108:8081/repository/insta-repo-release/</url>
+	      <url>http://52.66.239.140:8081/repository/insta-repo-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://3.110.222.108:8081/repository/insta-repo/</url>
+	      <url>http://52.66.239.140:8081/repository/insta-repo/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
