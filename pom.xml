@@ -113,7 +113,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://52.66.239.140:8081/repository/insta-repo/</url>
+	      <url>http://52.66.239.140:8081/repository/insta_repo/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
