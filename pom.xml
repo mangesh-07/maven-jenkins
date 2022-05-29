@@ -4,7 +4,7 @@
 	
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-application</artifactId>
-	<version>1.0.0</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	
 	<name>maven-web-application</name>
@@ -91,14 +91,14 @@
 			<version>${spring.version}</version>
 		</dependency>
 		
-		<!-- provided dependencies
+		<!-- provided dependencies -->
 
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
 			<scope>provided</scope> 
-		</dependency> -->
+		</dependency> 
 		
 	</dependencies>
 	
@@ -131,7 +131,11 @@
 					<target>${jdk.version}</target>
 				</configuration>
 			</plugin>
-
+                          <plugin>
+            			<groupId>org.codehaus.mojo</groupId>
+            			<artifactId>sonar-maven-plugin</artifactId>
+           			 <version>7.8</version>
+      			  </plugin>
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
