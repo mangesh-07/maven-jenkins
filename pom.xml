@@ -23,9 +23,7 @@
 		<log4j.version>1.2.17</log4j.version>
 		<sonar.host.url>http://13.232.149.165:9000/</sonar.host.url>
                 <sonar.login>df460965255f2968f3d673354810502f24e92f72</sonar.login>
-		<sonar.log.level>DEBUG</sonar.log.level>
-    <sonar.verbose>true</sonar.verbose>
-    <sonar.coverage.exclusions>**/*.js</sonar.coverage.exclusions
+		
 		
              
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
