@@ -1,0 +1,48 @@
+pipeline {
+    agent any
+     tools{
+     maven 'Maven3.8.5'
+     }
+    stages {
+        stage('Get a code from Github ') {
+            steps {
+                git 'https://github.com/mangesh-07/maven-jenkins.git'
+            }
+        
+        }
+    
+        stage('Create a build package using maven'){
+            steps{
+                sh 'mvn clean package'
+            }
+        }
+        
+        stage('Sonarqube report'){
+            steps{
+                sh 'mvn sonar:sonar'
+            }
+        }
+        
+        stage('Upload artifacts to Nexus'){
+        
+            steps{
+                sh 'mvn clean deploy'
+                
+            }
+            
+        }
+        
+        stage('Deploy to tomcat'){
+         steps{
+             sshagent(['6e4a2ffe-d737-4fc3-a171-e3523c7a64d0']) {
+             sh "scp -o StricthostKeyChecking=no target/maven-web-application.war ec2-user@52.66.255.4:/opt/apache-tomcat-9.0.63/webapps"   
+            
+            }
+         }
+             
+         }
+            
+        }
+        
+   }
+    
